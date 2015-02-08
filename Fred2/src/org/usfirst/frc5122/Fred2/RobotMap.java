@@ -12,7 +12,8 @@
 package org.usfirst.frc5122.Fred2;
     
 import edu.wpi.first.wpilibj.*;
-
+import edu.wpi.first.wpilibj.CounterBase.EncodingType;
+import edu.wpi.first.wpilibj.PIDSource.PIDSourceParameter;
 import edu.wpi.first.wpilibj.livewindow.LiveWindow;
 
 /**
