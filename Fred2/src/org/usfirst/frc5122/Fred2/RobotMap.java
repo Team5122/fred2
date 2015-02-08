@@ -71,11 +71,11 @@ public class RobotMap {
         drivegyro.setSensitivity(0.007);
         driveLeftEncoder = new Encoder(0, 1, false, EncodingType.k4X);
         LiveWindow.addSensor("Drive", "LeftEncoder", driveLeftEncoder);
-        driveLeftEncoder.setDistancePerPulse(1.0);
+        driveLeftEncoder.setDistancePerPulse(0.05235987755982989);
         driveLeftEncoder.setPIDSourceParameter(PIDSourceParameter.kDistance);
         driveRightEncoder = new Encoder(2, 3, false, EncodingType.k4X);
         LiveWindow.addSensor("Drive", "RightEncoder", driveRightEncoder);
-        driveRightEncoder.setDistancePerPulse(1.0);
+        driveRightEncoder.setDistancePerPulse(0.05235987755982989);
         driveRightEncoder.setPIDSourceParameter(PIDSourceParameter.kDistance);
         liftPusher = new DoubleSolenoid(0, 0, 1);      
         LiveWindow.addActuator("Lift", "Pusher", liftPusher);

@@ -72,8 +72,6 @@ public class OI {
 
 	    
         // SmartDashboard Buttons
-        SmartDashboard.putData("Autonomous Command", new AutonomousCommand());
-
         SmartDashboard.putData("TotePusher", new TotePusher());
 
         SmartDashboard.putData("LiftControl", new LiftControl());
@@ -81,6 +79,8 @@ public class OI {
         SmartDashboard.putData("HDrive", new HDrive());
 
         SmartDashboard.putData("ToteGrab", new ToteGrab());
+
+        SmartDashboard.putData("Auto1", new Auto1());
 
 
 
