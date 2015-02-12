@@ -12,8 +12,9 @@
 package org.usfirst.frc5122.Fred2.subsystems;
 
 import org.usfirst.frc5122.Fred2.RobotMap;
-import edu.wpi.first.wpilibj.*;
+import org.usfirst.frc5122.Fred2.commands.GrabberV2;
 
+import edu.wpi.first.wpilibj.*;
 import edu.wpi.first.wpilibj.command.Subsystem;
 
 
@@ -37,6 +38,7 @@ public class ToteGrabber extends Subsystem {
 	
         // Set the default command for a subsystem here.
         //setDefaultCommand(new MySpecialCommand());
+    	setDefaultCommand(new GrabberV2());
     }
     public void grab(boolean grab) {
     	toteGripper.set(grab);

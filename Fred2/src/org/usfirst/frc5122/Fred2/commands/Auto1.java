@@ -22,6 +22,23 @@ public class Auto1 extends CommandGroup {
         // e.g. addSequential(new Command1());
         //      addSequential(new Command2());
         // these will run in order.
+    	
+    	addSequential(new HDriveDistance(0.2*12,0,0));
+    	addParallel(new ToteGrab());
+    	addParallel(new HDriveDistance(0,0,0.1*12));
+    	addSequential(new ElevatorControl(2));
+    	addSequential(new ElevatorControl(-1));
+    	addSequential(new Debug("Do I hit this point"));
+    	addSequential(new HDriveDistance(0,0,2*12));
+    	addSequential(new HDriveDistance(3*12,0,0));
+    	addSequential(new HDriveDistance(0,0,-2*12));
+    	//addParallel(new ToteGrab());
+    	addSequential(new ElevatorControl(1));
+    	//addSequential(new ToteGrab());
+    	
+    	
+    	addSequential(new Debug("Drive Done"));
+    	 	
 
         // To run multiple commands at the same time,
         // use addParallel()
