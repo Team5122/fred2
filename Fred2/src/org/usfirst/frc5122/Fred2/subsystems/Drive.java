@@ -13,8 +13,8 @@ package org.usfirst.frc5122.Fred2.subsystems;
 
 import org.usfirst.frc5122.Fred2.RobotMap;
 import org.usfirst.frc5122.Fred2.commands.*;
-import edu.wpi.first.wpilibj.*;
 
+import edu.wpi.first.wpilibj.*;
 import edu.wpi.first.wpilibj.command.Subsystem;
 
 
@@ -122,6 +122,12 @@ public class Drive extends Subsystem {
     	}
     	// Drive
     	HDrive(drive, turn, slide);
+    }
+    public Encoder getLeftEncoder(){
+    	return leftEncoder;
+    }
+    public Encoder getStrafeEncoder(){
+    	return strafeEncoder;
     }
     
     

@@ -46,6 +46,9 @@ public class  GrabberV2 extends Command {
     		System.out.println("My arm should be out");
     	}else if(Robot.oi.getAux().getRawButton(2)){
     		Robot.toteGrabber.grab();
+    	}else if (Robot.oi.getAux().getRawButton(3)){
+    		Robot.toteGrabber.grab();
+    		Robot.lift.push();
     	}else{
     		Robot.toteGrabber.ungrab();
     	}
@@ -57,10 +60,7 @@ public class  GrabberV2 extends Command {
     	}else{
     		Robot.lift.unpush();
     	}
-    	if(Robot.oi.getAux().getRawButton(3)){
-    		Robot.lift.push();
-    		Robot.toteGrabber.grab();
-    	}
+    	
     }
 
     // Make this return true when this Command no longer needs to run execute()
